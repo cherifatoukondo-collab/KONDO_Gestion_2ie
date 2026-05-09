@@ -1,0 +1,16 @@
+.login-wrapper {
+  background-color: #f0f2f5;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+.login-description {
+  color: #5a6d82;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+

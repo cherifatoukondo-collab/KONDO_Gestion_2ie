@@ -1,0 +1,187 @@
+/* Footer Styles - Minimal 3 Lines */
+.app-footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+  color: #ecf0f1;
+  border-top: 2px solid #3498db;
+  font-size: 0.85rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Footer Lines */
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.5rem;
+  border-bottom: 1px solid rgba(52, 152, 219, 0.2);
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.footer-line:last-child {
+  border-bottom: none;
+}
+
+/* Line 1 - Brand & Contact */
+.footer-line-1 {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+}
+
+.footer-brand i {
+  font-size: 1rem;
+  color: #3498db;
+}
+
+.footer-title {
+  font-size: 0.85rem;
+  color: #3498db;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.footer-contact span {
+  display: flex;
+  align-items: center;
+}
+
+/* Line 2 - Additional Info */
+.footer-line-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.footer-line-2 span {
+  display: flex;
+  align-items: center;
+}
+
+.footer-line-2 .badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Line 3 - Copyright & Links */
+.footer-line-3 {
+  padding: 0.6rem 1.5rem;
+  background: rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+  color: #95a5a6;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.separator {
+  color: #7f8c8d;
+}
+
+/* Icons styling */
+.footer-line i {
+  color: #3498db;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-line {
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .footer-line-1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-contact {
+    font-size: 0.75rem;
+  }
+
+  .footer-line-2 {
+    font-size: 0.75rem;
+    justify-content: flex-start;
+  }
+
+  .footer-line-3 {
+    padding: 0.5rem 1rem;
+  }
+
+  .footer-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-line {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .footer-brand {
+    gap: 0.4rem;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .footer-line-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .footer-title {
+    font-size: 0.75rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,144 @@
+.ecoles-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  color: #111827;
+}
+
+.ecoles-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.ecoles-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.ecoles-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.ecoles-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ecoles-input,
+.ecoles-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  background: #f8fafc;
+  color: #111827;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.ecoles-textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.ecoles-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ecoles-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.ecoles-btn.primary {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.ecoles-btn.secondary {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.ecoles-btn.danger {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.ecoles-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(79, 70, 229, 0.14);
+}
+
+.ecoles-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.ecoles-table th,
+.ecoles-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.ecoles-table th {
+  background: #f8fafc;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+.ecoles-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.ecoles-table tbody tr td:last-child {
+  min-width: 180px;
+}
+
+.ecoles-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 13px;
+}
+
+.ecoles-empty {
+  text-align: center;
+  padding: 28px 0;
+  color: #6b7280;
+}
+
+@media (max-width: 860px) {
+  .ecoles-page {
+    padding: 0 16px;
+  }
+  .ecoles-form {
+    grid-template-columns: 1fr;
+  }
+  .ecoles-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
